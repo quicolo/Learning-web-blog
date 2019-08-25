@@ -79,13 +79,38 @@ header #logo img {
 
 header #menu-icon {
     font-size: 50px; /* Lo hacemos más grande */
-    display: none;   /* Lo ocultamos, se sacará en dispositivos móviles */
+    display: none;   /* Lo ocultamos, solo se sacará en dispositivos móviles */
+}
+
+/* Navegación */
+header nav {
+  float: right;
+  padding: 25px 20px 0px 0px;
 }
 
 header nav ul {
   list-style: none; /* Quitamos los puntos de la lista desordenada */
 }
 
+header nav ul li {
+  display:inline-block;;  /* Hacemos que la barra de navegación sea horizontal */
+  padding: 10px;  /* Separación entre cada par de elementos */
+  font-size: 150%;
+}
+
 header nav ul li a {
-  color: #6991ac;  /* Le asignamos otro color a los enlaces de navegacion */
+  color: #6991ac;  /* Le asignamos otro color a los enlaces de la barra de navegacion */
+}
+
+.current {
+  color: #3f5767  /* Resaltamos el enlace activo de la barra de navegación */
+}
+
+
+/*----- SECCIONES -----*/
+.un-tercio {
+  width: 31.5%;  /* Lo ajustamos para que quepan las tres columnas y no se cuele ningún
+                    otro elemento del árbol en el flujo */
+  float: left;  /* Hacemos que floten a la izquierda pegándose a lo que tengan a su lado */
+  padding: 10px;  /* Los separamos entre ellos un poco */
 }
