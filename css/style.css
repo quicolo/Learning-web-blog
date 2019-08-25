@@ -1,0 +1,91 @@
+/*----- ESTILOS GLOBALES -----*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Estilos del contenedor principal */
+#main-wrapper {
+  max-width: 1200px; /* Todo el contenido se encaja en 1200px de ancho */
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilos generales */
+body {
+  background-color: #ecf1f0;
+}
+
+
+p {
+  color: #524c56;
+  font-size: 160%; /* La agrandamos un 60% */
+  line-height: 155%; /* Interlineado más amplio */
+  padding: 3%;  /* Márgenes internos del bloque */
+  text-indent: 2%;  /* Sangría de primera línea */
+  text-align: justify;
+}
+
+h3 {
+  font-size: 175%; /* La agrandamos un 75% */
+  line-height: 155%; /* Interlineado más amplio */
+  font-weight:500;
+  color: #524c56;
+  text-align: center;
+  text-transform: uppercase;  /* Todo a mayúsculas */
+  padding: 0%;
+}
+
+/* Estilizamos los enlaces */
+a {
+  color: #524c56;
+  text-decoration: none; /* Quitamos el subrayado a los enlaces */
+  font-weight: bold; /* Lo ponemos en negrita */
+}
+
+a:hover {
+  color: #c3d7df;
+
+}
+
+/* Centramos las imágenes */
+img {
+  display: block;  /* Se mostrarán como bloques, no en línea */
+  margin: 0 auto;  /* 0 pixeles de margen en top y bottom y automático en left-right,
+                      esto último hace que se centre la imagen en la pantalla */
+  width: auto;    /* Queremos que el ancho sea automático, adaptándose al ancho
+                     "natural" de la imagen */
+  max-width: 100%  /* Pero garantizamos que la imagen no crecerá más a allá
+                      del 100% de su tamaño */
+  margin-bottom: -4px; /* Acercamos la imagen al elemento que tenga por debajo */
+}
+
+/*----- HEADER -----*/
+header {
+  height: 100px;
+}
+
+/* Estilizamos la imagen del logo de la cabecera */
+header #logo img {
+  top: 0;  /* La situamos en la esquina superior izquierda */
+  left: 0;
+  float:left;  /* Hacemos que flote a la izquierda */
+  margin: 20px; /* Le añadimos un margen de 20px en sus 4 lados */
+  width: 50px;   /* La reducimos a 50px de ancho */
+}
+
+header #menu-icon {
+    font-size: 50px; /* Lo hacemos más grande */
+    display: none;   /* Lo ocultamos, se sacará en dispositivos móviles */
+}
+
+header nav ul {
+  list-style: none; /* Quitamos los puntos de la lista desordenada */
+}
+
+header nav ul li a {
+  color: #6991ac;  /* Le asignamos otro color a los enlaces de navegacion */
+}
