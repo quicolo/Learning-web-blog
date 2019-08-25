@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>My learning web blog</title>
+
+    <!-- Mis estilos CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Incluimos el CSS de Font Awesome desde una CDN para poder incluir iconos de forma cómoda -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- Incluimos el CSS de BXSlider desde una CDN para poder hacer un slider de forma sencilla.
+         Como se basa en JQuery añadimos las dos librerías javascript que le hacen falta -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+  </head>
+  <body>
+    <h1>My learning web blog</h1>
+    <i class="fa fa-trash">Basurilla</i>
+
+    <div class="slider">
+        <div>Soy un slide que lo flipo.</div>
+        <div>Y yo otro.</div>
+    </div>
+
+
+    <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider();
+    });
+  </script>
+  </body>
+</html>
