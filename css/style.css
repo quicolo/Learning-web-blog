@@ -32,7 +32,7 @@ p {
 h3 {
   font-size: 175%; /* La agrandamos un 75% */
   line-height: 155%; /* Interlineado más amplio */
-  font-weight:500;
+  font-weight:600;
   color: #524c56;
   text-align: center;
   text-transform: uppercase;  /* Todo a mayúsculas */
@@ -93,7 +93,7 @@ header nav ul {
 }
 
 header nav ul li {
-  display:inline-block;;  /* Hacemos que la barra de navegación sea horizontal */
+  display:inline-block;  /* Hacemos que la barra de navegación sea horizontal */
   padding: 10px;  /* Separación entre cada par de elementos */
   font-size: 150%;
 }
@@ -108,9 +108,76 @@ header nav ul li a {
 
 
 /*----- SECCIONES -----*/
-.un-tercio {
+.columna {
   width: 31.5%;  /* Lo ajustamos para que quepan las tres columnas y no se cuele ningún
                     otro elemento del árbol en el flujo */
   float: left;  /* Hacemos que floten a la izquierda pegándose a lo que tengan a su lado */
   padding: 10px;  /* Los separamos entre ellos un poco */
+  margin-bottom: 5%;  /* Los separamos del elemento de más abajo */
+}
+
+.icon-wrapper {
+  background-color: #3f5767;
+  margin: 0 auto;  /* 0 por arriba y abajo y centramos en horizontalmente */
+  margin-bottom: 3%;  /* Lo separamos un poco del siguiente elemento */
+  /* Convertimos el contenedor en un círculo */
+  height: 100px;  width: 100px;  border-radius: 50px;
+  text-align: center;  /* Dado que un icono es una fuente, lo centramos como un texto */
+}
+
+.icon-wrapper i {
+  color: #fff;  /* Ponemos el icono en blanco */
+  font-size: 300%; /* Y lo agrandamos */
+  margin-top: 22px;
+}
+
+.columna img {
+  height: 150px;
+}
+
+/*------ FOOTER ------*/
+footer {
+  box-sizing: border-box; /* Con esto le indicamos que el tamaño del border y el padding
+                             se incluya en las dimensiones de width y height */
+}
+
+/* Vamos ajustando los elementos del footer por columnas */
+footer .footer-wrapper {
+  width: 45%;
+  display: inline-block;
+  margin-right: 1.5%;
+}
+
+/* Ajustamos el último elemento/columna a la derecha y sin margen */
+footer .footer-wrapper:last-of-type {
+  float:right;
+  margin-right: 0;
+}
+
+.ul-footer-nav {
+  list-style: none; /* Quitamos los puntos de la lista desordenada */
+  text-align: center;
+}
+
+.ul-footer-nav li {
+  display:inline-block;  /* Hacemos que la barra de navegación sea horizontal */
+  padding: 10px;  /* Separación entre cada par de elementos */
+  font-size: 100%;
+}
+
+.ul-footer-social {
+  list-style: none; /* Quitamos los puntos de la lista desordenada */
+  text-align: center;
+}
+
+.ul-footer-social li {
+  display:inline-block;  /* Hacemos que la barra de navegación sea horizontal */
+  padding: 0 20px;  /* Separación entre cada par de elementos */
+  font-size: 200%;
+}
+
+#second-footer {
+  padding: 3% 0;
+  text-align: center;
+  font-size: 100%;
 }
